@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>login</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_login.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+
+<body>
+  <div class="navbar__logo">
+    <a href="index.html">FITTME</a>
+  </div>
+  <div class="main_login">
+      <ul class="login_page">
+        <form action="http://localhost/toypj/login.php">
+          <ul class="login_input">
+            <li class="login_main_latter">로그인</li>
+            <li><hr></hr></li>
+            <li><input class="input"type="text" name="id" placeholder="  아이디(이메일)" autofocus ></li>
+            <li><input class="input"type="password" name="pwd" placeholder="  비밀번호" autocomplete="off"></li>
+            <li><input class="logbtn"type="submit" value="로그인하기"></li>
+          </ul>
+        </form>
+        <ul class="login_sns">
+          <li>SNS계정으로 로그인하기</li>
+        </ul>
+        <ul class="login_sns_icon">
+          <li><button class="icon_e"><i class="fas fa-envelope"></i></button></li>
+          <li><button class="icon_f"><i class="fab fa-facebook-f"></i></button></li>
+          <li><button class="icon_k"><i class="fas fa-comment"></i></button></li>
+        </ul>
+        <ul class="join_btn">
+          <li><button onclick="document.location.href='index_joinus.html'">계정이 없으시다면! 간편가입하기</button></li>
+        </ul>
+        
+        <ul class="login_search">
+          <li><a href="#">아이디(이메일찾기)</a></li>
+          <li><a href="#">비밀번호 찾기</a</li>
+          <li><a href="#">비회원 주문조회</a></li>
+        </ul>
+      </ul>
+    
+  </div>
+</body>
+
+</html>

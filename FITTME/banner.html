@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>banner</title>
+  <link rel="stylesheet" href="css/banner_style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+
+<body>
+  <div class="navbar__logo">
+    <a href="index.html">FITTME</a>
+  </div>
+
+  <ul class="navbar__login">
+    <li><a href="login.html">LOG IN</a></li>
+    <li id="mypage"><a href=""><i class="fas fa-user-alt"></i></a></li>
+  </ul>
+
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <input type="radio" name="radio-btn" id="radio6">
+
+      <div class="slide first">
+        <img src="https://kimkyungmin123.github.io/toypj_1_img_1/b1.png" alt="" width="1300px">
+      </div>
+      <div class="slide">
+        <img src="https://kimkyungmin123.github.io/toypj_1_img_1/b2.png" alt="" width="1300px">
+      </div>
+      <div class="slide">
+        <img src="https://kimkyungmin123.github.io/toypj_1_img_1/b3.png" alt="" width="1300px">
+      </div>
+      <div class="slide">
+        <img src="https://kimkyungmin123.github.io/toypj_1_img_1/b4.png" alt="" width="1300px">
+      </div>
+      <div class="slide">
+        <img src="https://kimkyungmin123.github.io/toypj_1_img_1/b5.png" alt="" width="1300px">
+      </div>
+      <div class="slide">
+        <img src="https://kimkyungmin123.github.io/toypj_1_img_1/b6.png" alt="" width="1300px">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-bnt1"></div>
+        <div class="auto-bnt2"></div>
+        <div class="auto-bnt3"></div>
+        <div class="auto-bnt4"></div>
+        <div class="auto-bnt5"></div>
+        <div class="auto-bnt6"></div>
+      </div>
+
+    </div>
+
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var counter = 1;
+    setInterVal(function(){
+      document.getElementById('radio' + counter).checked= true;
+      counter++;
+      if(counter>6){
+        counter =1;
+      }
+    },5000);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: #000000;
+  --blue-color: #1a69d1;
+  --yellow-color: #ffee04;
+  --grey-dark-color: #585353;
+  --grey-light1-color: #9e9d9d;
+  --grey-light2-color: #696464;
+  --grey-font-color: #808080;
+
+  /* font-size */
+  --font-large: 2.7rem;
+  --font-lesslarge: 2.5rem;
+  --font-moreregular: 2.3rem;
+  --font-regular: 2rem;
+  --font-lessregular: 1.9rem;
+  --font-medium: 1.7rem;
+  --font-lessmedium: 1.5rem;
+  --font-small: 1.4rem;
+  --font-smaller: 1rem;
+  --font-moresmall: 0.8rem;
+}
+
+.main_login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  margin: 0;
+}
+.login_page {
+  margin: 0;
+  padding-left: 0;
+}
+.login_page ul {
+  padding: 10px 0;
+}
+.login_input,
+.login_sns,
+.login_page li,
+.login_search {
+  list-style: none;
+}
+.login_input li {
+  padding-top: 10px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+}
+.login_main_latter {
+  font-size: var(--font-moreregular);
+  color: var(--black-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+hr {
+  border: solid 3px var(--black-color);
+  background-color: var(--black-color);
+  width: 450px;
+}
+
+.input,
+.logbtn {
+  width: 450px;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+.logbtn {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-color: var(--black-color);
+  font-weight: bolder;
+  font-size: var(--font-smaller);
+  width: 454px;
+  cursor: pointer;
+}
+
+.login_sns {
+  font-size: var(--font-mall);
+  font-weight: bold;
+  text-align: center;
+}
+.login_sns li {
+  padding-top: 30px;
+}
+.login_sns_icon {
+  margin: 0 20px;
+  justify-content: space-between;
+  display: flex;
+  color: var(--white-color);
+}
+
+.login_sns_icon button {
+  width: 130px;
+  height: 45px;
+  border-radius: 50px;
+}
+.login_sns_icon :hover {
+  opacity: 80%;
+}
+.login_sns_icon i {
+  color: var(--white-color);
+  font-size: 25px;
+}
+.icon_e {
+  background-color: var(--black-color);
+}
+.icon_f {
+  background-color: var(--blue-color);
+}
+.icon_k {
+  background-color: var(--yellow-color);
+}
+.join_btn li {
+  padding-top: 110px;
+}
+.join_btn button {
+  width: 450px;
+  height: 55px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: var(--grey-light1-color);
+  background-color: var(--white-color);
+  font-size: var(--font-smaller);
+  font-weight: bolder;
+}
+.join_btn button:hover {
+  opacity: 70%;
+}
+.login_search {
+  display: flex;
+  justify-content: space-around;
+}
+.login_search a {
+  text-decoration: none;
+  color: var(--grey-font-color);
+}

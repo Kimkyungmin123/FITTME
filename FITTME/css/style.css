@@ -1,0 +1,248 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #585353;
+  --grey-light1-color: #9e9d9d;
+  --grey-light2-color: #696464;
+  --grey-font-color: #808080;
+
+/* font-size */
+--font-large: 2.7rem;
+--font-lesslarge:2.5rem;
+--font-regular:2rem;
+--font-lessregular:1.9rem;
+--font-medium:1.7rem;
+--font-lessmedium:1.5rem;
+--font-small:1.4rem;
+--font-moresmall: 0.8rem;
+
+
+
+
+}
+body {
+  background-color: #dbdbdb;
+  padding-bottom: 0px;
+  font-family: "Noto Sans";
+}
+
+.navbar__logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__logo {
+  text-align: center;
+  /* font-weight:  bold; */
+  font-size: var(--font-regular);
+  padding-top: 40px;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: var(--grey-font-color);
+}
+
+.navbar__menu {
+  /* display: inline; */
+  padding-left: 3%;
+  line-height: 1.5;
+  font-weight: 550;
+  list-style: none;
+  margin: 0px;
+}
+
+.navbar__menu li {
+  padding: 3px 5px;
+}
+
+.navbar__menu a:hover {
+  color: var(--grey-dark-color);
+  font-weight: 600;
+  transition: 0.1s;
+}
+
+.navbar__login a {
+  text-decoration: none;
+  color: var(--grey-font-color);
+}
+
+.navbar__login {
+  top: 6%;
+  display: flex;
+  position: absolute;
+  padding-left: 90%;
+  margin-top: 0px;
+  font-weight: 530;
+  list-style: none;
+  padding-top: 0;
+}
+
+#mypage {
+  padding-left: 10px;
+}
+
+/* @media screen and (max-width:) */
+/* .wap1{
+  text-align: center; margin: 0px; position: relative; bottom: 20px;
+
+/* 315 × 589 */
+}
+/* .wap1 #main_model{
+height: 650px;
+} */
+/*
+.notice__hover1 img{
+  display: inline;
+  height: 620px;
+
+} */
+.main1 {
+  display: none;
+  width: 0%;
+  position: absolute;
+  background-position: center;
+  display: none;
+  margin: 0;
+}
+
+.main1 > img {
+  height: 780px;
+  left: 38%;
+  position: fixed;
+  display: block;
+  background-position: center;
+  margin: 0;
+}
+
+.main1 > .cover {
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.3s;
+}
+
+.main1 > .cover > img {
+  position: fixed;
+  display: block;
+  height: 780px;
+  background-position: center;
+  margin: 0;
+  left: 38%;
+}
+
+.main1:hover > .cover {
+  opacity: 1;
+}
+
+.sentence {
+  display: inline;
+  /* display:flex; */
+}
+
+#sen1 {
+  position: absolute;
+  top: 460px;
+  padding-left: 3%;
+  display: inline;
+  flex-direction: column;
+  font-size: var(--font-large);
+  line-height: 1.2;
+}
+
+#sen2 {
+  position: absolute;
+  top: 590px;
+  padding-left: 3%;
+  display: inline;
+  flex-direction: column;
+  font-size: var(--font-moresmall);
+  opacity: 40%;
+}
+
+.navbar__joinus {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__joinus a {
+  text-decoration: none;
+  color: var(--grey-font-color);
+}
+
+.navbar__joinus > .joinus {
+  position: absolute;
+  font-size: var(--font-small);
+  top: 663px;
+  padding-left: 3.3%;
+}
+
+.navbar__joinus > .joinus_icon {
+  position: absolute;
+  font-size: 1.7rem;
+  padding-left: 10px;
+  top: 660px;
+  padding-left: 8%;
+  opacity: 70%;
+}
+.navbar__joinus :hover a {
+  color: var(--grey-dark-color);
+  font-weight: 600;
+  font-size: var(--font-lessregular);
+  transition: 0.3s;
+}
+
+.navbar__icons {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__icons a {
+  color: #656565;
+  text-decoration: none;
+}
+.navbar__icons > .fbook {
+  position: absolute;
+  top: 940px;
+  padding-left: 3%;
+  font-size: var(--font-small);
+}
+
+.navbar__icons > .insta {
+  position: absolute;
+  padding-left: 4.3%;
+  top: 940px;
+  font-size: var(--font-lessmedium);
+}
+.fbook :hover {
+  transition: 0.1s;
+  color: var(--black-color);
+}
+.insta :hover {
+  transition: 0.1s;
+  color: var(--black-color);
+}
+
+.login p,
+.login input {
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1652px) {
+  .joinus {
+    visibility: hidden;
+  }
+  .joinus_icon a {
+    font-size: var(--font-lesslarge);
+    color: var(--grey-light1-color);
+  }
+  .navbar__joinus :hover a {
+    color: var(--grey-light2-color);
+    font-size: var(--font-large);
+    transition: 0.3s;
+  }
+}
